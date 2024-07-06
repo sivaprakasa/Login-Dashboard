@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>web</title>
+		<link
+			rel="stylesheet"
+			href="{{url_for('static',filename='css/bootstrap.min.css')}}"
+		/>
+        <link rel="stylesheet" href="static/css/demo.css">
+		
+	</head>
+	<body>
+		<div class="topnav">
+			<div class="container-fulid">
+				<nav class="navbar navbar-expand-sm">
+					<a class="navbar-brand" href="#"><b>Welcome</b></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					  </button>
+					
+
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="nav">
+							<li class="nav-item logout">
+								<a class="nav-link" href="/">Logout</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="about">
+				<h2 class="welcome">Welcome, {{ username }}</h2>
+			</div>
+		</div>
+		
+	</body>
+</html>
